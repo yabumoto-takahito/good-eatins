@@ -8,11 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+//テーブルビューデリゲートとテーブルビューデータソースに関するデータのやりとりもここで扱いますよーという宣言
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+//  セルの個数を指定するデリゲートメソッド（必須）
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+//  セルに値を設定するデータソースメソッド（必須）
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
 
 

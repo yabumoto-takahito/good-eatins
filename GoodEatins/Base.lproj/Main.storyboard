@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger6" translatesAutoresizingMaskIntoConstraints="NO" id="66e-4Q-N9B">
-                                                    <rect key="frame" x="8" y="0.0" width="398" height="192.00000000000011"/>
+                                                    <rect key="frame" x="8" y="0.0" width="398" height="192"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burgers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT0-JZ-QqQ">
                                                     <rect key="frame" x="20" y="61" width="374" height="78"/>
@@ -60,6 +60,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="JMh-HU-U58"/>
+                    <connections>
+                        <outlet property="tableView" destination="oMg-g2-L3y" id="euN-i0-8Af"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

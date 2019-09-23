@@ -56,6 +56,9 @@
 		915DABAA233882B7000930C1 /* GoodEatins */ = {
 			isa = PBXGroup;
 			children = (
+				915DABC1233884EA000930C1 /* Controller */,
+				915DABC0233884DC000930C1 /* View */,
+				915DABBF233884A4000930C1 /* Model */,
 				915DABAB233882B7000930C1 /* AppDelegate.swift */,
 				915DABAD233882B7000930C1 /* SceneDelegate.swift */,
 				915DABAF233882B7000930C1 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				915DABB9233882B8000930C1 /* Info.plist */,
 			);
 			path = GoodEatins;
+			sourceTree = "<group>";
+		};
+		915DABBF233884A4000930C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		915DABC0233884DC000930C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		915DABC1233884EA000930C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,6 +16,7 @@
 		915DABC3233887C4000930C1 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC2233887C4000930C1 /* FoodCategory.swift */; };
 		915DABC5233887DF000930C1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC4233887DF000930C1 /* Recipe.swift */; };
 		915DABC7233887F9000930C1 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC6233887F9000930C1 /* DataSet.swift */; };
+		915DABC9233A5991000930C1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC8233A5991000930C1 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		915DABC2233887C4000930C1 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		915DABC4233887DF000930C1 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		915DABC6233887F9000930C1 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		915DABC8233A5991000930C1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		915DABC0233884DC000930C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				915DABC8233A5991000930C1 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				915DABC7233887F9000930C1 /* DataSet.swift in Sources */,
 				915DABB0233882B7000930C1 /* ViewController.swift in Sources */,
 				915DABAC233882B7000930C1 /* AppDelegate.swift in Sources */,
+				915DABC9233A5991000930C1 /* CategoryCell.swift in Sources */,
 				915DABAE233882B7000930C1 /* SceneDelegate.swift in Sources */,
 				915DABC3233887C4000930C1 /* FoodCategory.swift in Sources */,
 				915DABC5233887DF000930C1 /* Recipe.swift in Sources */,

@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="JkL-bX-PWz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="200" id="JkL-bX-PWz" customClass="CategoryCell" customModule="GoodEatins" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JkL-bX-PWz" id="kEH-B1-vke">
@@ -46,6 +46,10 @@
                                                 <constraint firstItem="66e-4Q-N9B" firstAttribute="leading" secondItem="kEH-B1-vke" secondAttribute="leading" constant="8" id="wMA-kj-hcP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImg" destination="66e-4Q-N9B" id="BOu-Sm-rPe"/>
+                                            <outlet property="categoryTitle" destination="dT0-JZ-QqQ" id="B5e-FH-3a8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

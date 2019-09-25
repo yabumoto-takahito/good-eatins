@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     let data = DataSet()
     
     override func viewDidLoad() {
@@ -34,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
 //      Fetch a cell of the appropriate type.
 //      適切なタイプのセルを取得。
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as? CategoryCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
 //          メソッドの引数 indexPath の変数 row には、セルのインデックス番号が設定されている。
             cell.configureCell(category: data.categories[indexPath.row])
             return cell

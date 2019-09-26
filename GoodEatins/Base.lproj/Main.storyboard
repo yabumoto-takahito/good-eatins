@@ -66,11 +66,28 @@
                     <navigationItem key="navigationItem" id="JMh-HU-U58"/>
                     <connections>
                         <outlet property="tableView" destination="oMg-g2-L3y" id="euN-i0-8Af"/>
+                        <segue destination="hrN-bd-r8c" kind="show" identifier="toRecipesSelection" id="PVw-4B-sza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g8w-HZ-Yuz">
+            <objects>
+                <viewController id="hrN-bd-r8c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nen-nY-Mo3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iGi-Jg-RGU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Iq-6b-TJE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qk3-Xt-sBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OWX-Ce-O14">

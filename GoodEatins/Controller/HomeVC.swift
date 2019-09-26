@@ -10,11 +10,12 @@ import UIKit
 
 //テーブルビューデリゲートとテーブルビューデータソースに関するデータのやりとりもここで扱いますよーという宣言
 //デリゲートは他のクラスに処理を委譲したり、通知したりする仕組み
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
     let data = DataSet()
+    var categoryToPass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
 //  セルの個数を指定するデリゲートメソッド（必須）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.categories.count
     }
+    
 //  セルに値を設定するデータソースメソッド（必須）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -41,8 +44,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         return UITableViewCell()
     }
+    
 //  各indexPathのセルの高さを指定。
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+//  タップされたセルの行番号を取得。
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        categoryToPass = data.categories[indexPath.row].title
+        // toRecipesSelectionに遷移
+        performSegue(withIdentifier: "toRecipesSelection", sender: self)
+    }
+    
+//  セグエ実行前処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let recipesVC = segue.destination as? RecipesSelectionVC {
+            recipesVC.selectedCategory = categoryToPass
+        }
     }
 }

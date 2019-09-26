@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //      Fetch a cell of the appropriate type.
 //      適切なタイプのセルを取得。
         if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
+//          cell中身セット（引数　セル、indexPath）
 //          メソッドの引数 indexPath の変数 row には、セルのインデックス番号が設定されている。
             cell.configureCell(category: data.categories[indexPath.row])
             return cell

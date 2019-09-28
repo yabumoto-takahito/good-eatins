@@ -2,8 +2,8 @@
 //  DataSet.swift
 //  GoodEatins
 //
-//  Created by 薮本崇仁 on 2019/09/23.
-//  Copyright © 2019 薮本崇仁. All rights reserved.
+//  Created by jonnyb on 8/22/18.
+//  Copyright © 2018 jonnyb. All rights reserved.
 //
 
 import Foundation
@@ -94,9 +94,8 @@ class DataSet {
         Recipe(title: "Veggie Sandwich", instructions: "Toast the bread in a toaster, or under a broiler on both sides. Cut the lettuce leaves in half crosswise and form into 8 neat stacks. \nTo make a double-decker club: On a clean work surface, arrange 3 bread slices in a row. Spread 1 tablespoon mayonnaise over 1 side of each bread slice. Place a lettuce stack on top of the first bread slice, top with 2 tomato slices, and season with salt and pepper, to taste.", imageName: "sandwich4"),
         Recipe(title: "Grilled Panini", instructions: "Toast the bread in a toaster, or under a broiler on both sides. Cut the lettuce leaves in half crosswise and form into 8 neat stacks. \nTo make a double-decker club: On a clean work surface, arrange 3 bread slices in a row. Spread 1 tablespoon mayonnaise over 1 side of each bread slice. Place a lettuce stack on top of the first bread slice, top with 2 tomato slices, and season with salt and pepper, to taste.", imageName: "sandwich5"),
         Recipe(title: "Club Sandwich", instructions: "Toast the bread in a toaster, or under a broiler on both sides. Cut the lettuce leaves in half crosswise and form into 8 neat stacks. \nTo make a double-decker club: On a clean work surface, arrange 3 bread slices in a row. Spread 1 tablespoon mayonnaise over 1 side of each bread slice. Place a lettuce stack on top of the first bread slice, top with 2 tomato slices, and season with salt and pepper, to taste.", imageName: "sandwich6"),
-    ]
+        ]
     
-//  トップページでクリックするとレシピを取得
     func getRecipes(forCategoryTitle title:String) -> [Recipe] {
         switch title {
         case "Burgers":

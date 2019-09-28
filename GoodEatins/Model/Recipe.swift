@@ -2,8 +2,8 @@
 //  Recipe.swift
 //  GoodEatins
 //
-//  Created by jonnyb on 8/22/18.
-//  Copyright © 2018 jonnyb. All rights reserved.
+//  Created by 薮本崇仁 on 2019/09/23.
+//  Copyright © 2019 薮本崇仁. All rights reserved.
 //
 
 import Foundation

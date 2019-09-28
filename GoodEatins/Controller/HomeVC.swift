@@ -34,8 +34,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //  セルに値を設定するデータソースメソッド（必須）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-//      Fetch a cell of the appropriate type.
-//      適切なタイプのセルを取得。
+//      オプショナルバイニングで空じゃないか判定
         if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
 //          cell中身セット（引数　セル、indexPath）
 //          メソッドの引数 indexPath の変数 row には、セルのインデックス番号が設定されている。
@@ -50,8 +49,9 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 200
     }
     
-//  タップされたセルの行番号を取得。
+//  セルがタップされた時に呼ばれるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//      タップされたセル（カテゴリー）のタイトルを取得
         categoryToPass = data.categories[indexPath.row].title
         // toRecipesSelectionに遷移
         performSegue(withIdentifier: "toRecipesSelection", sender: self)
@@ -59,8 +59,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 //  セグエ実行前処理
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if let recipesVC = segue.destination as? RecipesSelectionVC {
             recipesVC.selectedCategory = categoryToPass
         }
+        
     }
 }

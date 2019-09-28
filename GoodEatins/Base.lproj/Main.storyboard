@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,14 +81,60 @@
                     <view key="view" contentMode="scaleToFill" id="Nen-nY-Mo3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wk0-wq-XcS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cuM-UH-wwG">
+                                    <size key="itemSize" width="97" height="108"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XaW-0v-ZeP" customClass="RecipeCell" customModule="GoodEatins" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w1N-u8-Pv5">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mza-Rg-orB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mza-Rg-orB" firstAttribute="top" secondItem="w1N-u8-Pv5" secondAttribute="top" id="FaT-7N-t7q"/>
+                                                <constraint firstAttribute="bottom" secondItem="mza-Rg-orB" secondAttribute="bottom" id="GtT-aN-hQZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="mza-Rg-orB" secondAttribute="trailing" id="PGN-uR-dCw"/>
+                                                <constraint firstItem="mza-Rg-orB" firstAttribute="leading" secondItem="w1N-u8-Pv5" secondAttribute="leading" id="s9v-yI-TE5"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="recipeImg" destination="mza-Rg-orB" id="M6o-60-eXv"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wk0-wq-XcS" firstAttribute="leading" secondItem="iGi-Jg-RGU" secondAttribute="leading" id="11D-bL-QXL"/>
+                            <constraint firstItem="wk0-wq-XcS" firstAttribute="top" secondItem="iGi-Jg-RGU" secondAttribute="top" id="H1z-Xg-QSs"/>
+                            <constraint firstItem="iGi-Jg-RGU" firstAttribute="bottom" secondItem="wk0-wq-XcS" secondAttribute="bottom" id="tFC-4H-Gul"/>
+                            <constraint firstItem="iGi-Jg-RGU" firstAttribute="trailing" secondItem="wk0-wq-XcS" secondAttribute="trailing" id="xBp-KG-d8C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iGi-Jg-RGU"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Iq-6b-TJE"/>
+                    <connections>
+                        <outlet property="collectionView" destination="wk0-wq-XcS" id="bpQ-Fa-FFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qk3-Xt-sBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="130"/>
+            <point key="canvasLocation" x="2000.0000000000002" y="129.91071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OWX-Ce-O14">

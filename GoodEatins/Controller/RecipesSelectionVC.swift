@@ -10,6 +10,7 @@ import UIKit
 
 class RecipesSelectionVC: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var selectedCategory: String!
 
     override func viewDidLoad() {

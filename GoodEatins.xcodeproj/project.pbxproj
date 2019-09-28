@@ -18,6 +18,7 @@
 		915DABC7233887F9000930C1 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC6233887F9000930C1 /* DataSet.swift */; };
 		915DABC9233A5991000930C1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABC8233A5991000930C1 /* CategoryCell.swift */; };
 		915DABCB233D1869000930C1 /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915DABCA233D1869000930C1 /* RecipesSelectionVC.swift */; };
+		916C201E233FC6CF00B50043 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C201D233FC6CF00B50043 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		915DABC6233887F9000930C1 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 		915DABC8233A5991000930C1 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		915DABCA233D1869000930C1 /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
+		916C201D233FC6CF00B50043 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				915DABC8233A5991000930C1 /* CategoryCell.swift */,
+				916C201D233FC6CF00B50043 /* RecipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				915DABC7233887F9000930C1 /* DataSet.swift in Sources */,
 				915DABB0233882B7000930C1 /* HomeVC.swift in Sources */,
 				915DABAC233882B7000930C1 /* AppDelegate.swift in Sources */,
+				916C201E233FC6CF00B50043 /* RecipeCell.swift in Sources */,
 				915DABC9233A5991000930C1 /* CategoryCell.swift in Sources */,
 				915DABAE233882B7000930C1 /* SceneDelegate.swift in Sources */,
 				915DABCB233D1869000930C1 /* RecipesSelectionVC.swift in Sources */,
